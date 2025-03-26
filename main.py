@@ -82,10 +82,10 @@ if uploaded_file is not None:
         col1, col2 = st.columns([1, 1])
 
         with col1:
-            st.image(original_image, caption="Original Image", use_column_width=True)
+            st.image(original_image, caption="Original Image", use_container_width=True)
 
         with col2:
-            st.image(extended_image, caption="Extended Image", use_column_width=True)
+            st.image(extended_image, caption="Extended Image", use_container_width=True)
 
     # Clean up the temporary file
     os.remove(unique_filename)
